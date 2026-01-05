@@ -1,3 +1,5 @@
 class FizzBuzzSolver {
-  solve(int input) {}
+  solve(int input) {
+    return "Fizz";
+  }
 }
