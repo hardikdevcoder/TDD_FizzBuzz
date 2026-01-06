@@ -22,6 +22,16 @@ void main() {
     //ASSERT
     expect(output, "Fizz");
   });
+  test("For multiples of three return 'Fizz' instead of the number 6", () {
+    //ARRANGE
+    const input = 6;
+
+    //ACT
+    final output = solver.solve(input);
+
+    //ASSERT
+    expect(output, "Fizz");
+  });
 
   test("For multiples of five return 'Buzz' for input as 5", () {
     //ARRANGE
