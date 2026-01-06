@@ -73,4 +73,14 @@ void main() {
     //ASSERT
     expect(output, "FizzBuzz");
   });
+  test("For numbers that are not multiples of both three and five return the number 13 as String", () {
+    //ARRANGE
+    const input = 13;
+
+    //ACT
+    final output = solver.solve(input);
+
+    //ASSERT
+    expect(output, "13");
+  });
 }
