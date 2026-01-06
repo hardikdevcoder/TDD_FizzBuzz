@@ -43,4 +43,14 @@ void main() {
     //ASSERT
     expect(output, "Buzz");
   });
+  test("For multiples of ten return 'Buzz' for input as 10", () {
+    //ARRANGE
+    const input = 10;
+
+    //ACT
+    final output = solver.solve(input);
+
+    //ASSERT
+    expect(output, "Buzz");
+  });
 }
