@@ -83,4 +83,14 @@ void main() {
     //ASSERT
     expect(output, "13");
   });
+  test("For numbers that are not multiples of both three and five return the number 23 as String", () {
+    //ARRANGE
+    const input = 23;
+
+    //ACT
+    final output = solver.solve(input);
+
+    //ASSERT
+    expect(output, "23");
+  });
 }
