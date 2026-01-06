@@ -53,4 +53,14 @@ void main() {
     //ASSERT
     expect(output, "Buzz");
   });
+  test("For numbers that are multiples of both three and five return 'FizzBuzz' instead of the number 15", () {
+    //ARRANGE
+    const input = 15;
+
+    //ACT
+    final output = solver.solve(input);
+
+    //ASSERT
+    expect(output, "FizzBuzz");
+  });
 }
