@@ -1,13 +1,20 @@
 class FizzBuzzSolver {
   solve(int input) {
-    if (input % 3 == 0 && input % 5 == 0) {
+    final multipleOfThree = _isMultipleOf(3, input);
+    final multipleOfFive = _isMultipleOf(5, input);
+
+    if (multipleOfThree && multipleOfFive) {
       return "FizzBuzz";
     }
-    if (input % 3 == 0) {
+    if (multipleOfThree) {
       return "Fizz";
     }
-    if (input % 5 == 0) {
+    if (multipleOfFive) {
       return "Buzz";
     }
+  }
+
+  bool _isMultipleOf(int number, int input) {
+    return input % number == 0;
   }
 }
