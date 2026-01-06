@@ -12,6 +12,7 @@ class FizzBuzzSolver {
     if (multipleOfFive) {
       return "Buzz";
     }
+    return input.toString();
   }
 
   bool _isMultipleOf(int number, int input) {
